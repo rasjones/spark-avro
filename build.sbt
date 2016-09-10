@@ -43,8 +43,8 @@ libraryDependencies ++= Seq(
 testOptions in Test += Tests.Argument("-oF")
 
 scoverage.ScoverageKeys.coverageMinimum := {
-  if (scalaBinaryVersion.value == "2.10") false
-  else true
+  if (scalaBinaryVersion.value == "2.10") 70
+  else 30
 }
 
 EclipseKeys.eclipseOutput := Some("target/eclipse")
