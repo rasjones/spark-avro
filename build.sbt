@@ -87,8 +87,6 @@ pomExtra :=
 
 bintrayReleaseOnPublish in ThisBuild := false
 
-import ReleaseTransformations._
-
 // Add publishing to spark packages as another step.
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,
